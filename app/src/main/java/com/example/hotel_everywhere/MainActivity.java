@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void goMeetingroom(View v) {
         Intent intent = new Intent(MainActivity.this, MeetingRoomServiceActivity.class);
+        intent.putExtra("hotel", hotel);
         startActivity(intent);
     }
 
