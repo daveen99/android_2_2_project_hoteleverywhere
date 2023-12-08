@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F8F8FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:backgroundTint="#4682B4"
+        android:enabled="false"
+        android:rotationX="280" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="예약정보"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileBIG"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/profile"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/clientName"
+        android:text="김다빈 고객님"
+        android:textColor="@color/white"
+        android:textSize="15pt"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/reservationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:text="[예약호실]\n    ● 1042호 \n[체크인 예정 일자]\n    ● 날짜\n[체크아웃 예정 일자]\n    ● 날짜 " />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="35dp"
+        android:onClick="goBack"
+        android:textSize="8pt"
+        android:backgroundTint="#4682B4"
+        android:textStyle="bold"
+        android:text="돌아가기" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="230dp"
+        android:backgroundTint="#DC143C"
+        android:onClick="showDialog"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:text="예약취소" />
+
+
+</FrameLayout>

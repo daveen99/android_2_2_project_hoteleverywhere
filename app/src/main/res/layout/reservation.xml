@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#66ffffff"
+        android:text="호텔 예약 서비스"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10pt" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66ffffff" />
+
+    <TextView
+        android:id="@+id/reservationText"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#66ffffff"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="예약일자를 선택해주세요" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#66ffffff"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#66ffffff"
+                android:gravity="center"
+                android:text="예약자 이름"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/reservationName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textColor="#778899"
+                android:textAlignment="center"
+                android:hint="이곳에 이름을 입력"/>
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/miniprofile"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="110dp"
+            android:src="@drawable/profile"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="selectPicture"
+            android:backgroundTint="#3333FF"
+            android:text="프로필 \n선택하기"
+            android:layout_weight="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:onClick="goBack"
+        android:backgroundTint="#4682B4"
+
+        android:text="돌아가기" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3CB371"
+        android:onClick="makeReservation"
+        android:text="예약하기" />
+    </LinearLayout>
+</LinearLayout>
